@@ -31,6 +31,7 @@
 		"multiline-ternary":"off",
 		"no-trailing-spaces":"off",
 		"comma-dangle":"off",
+		"no-mixed-spaces-and-tabs":"off",
 		"space-before-function-paren":"off",
 		"quotes":"off",
 		"react/no-unknown-property": [

@@ -28,7 +28,7 @@ export default function MainHome () {
 				</h1>
 				<div className='bg-[#1c233a] absolute w-full lg:w-[41.7vw] h-40 top-16 left-0'></div>
 				<p className=' mb-20 relative'>
-				   አዋቂ እራሱን ይፈትናል!
+				አዋቂ እራሱን ይፈትናል!
 				</p>
 			</article>
 			<button onClick={handlePlay} id='play' href="play" className='btn-primary uppercase px-6 py-4 text-lg max-w-md w-full mx-auto mt-10' >
