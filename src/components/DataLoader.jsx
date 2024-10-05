@@ -32,10 +32,10 @@ export default function DataLoader() {
     }, []); // Only run on component mount
 
     return (
-        <div>
-            {loading && <p>Loading data...</p>}
-            {error && <p>Error: {error}</p>}
-            {!loading && !error && <p>Data has been refreshed on load.</p>}
+        <div class="text-right">
+            {loading && <p >Loading</p>}
+            {error && <p>🟡</p>}
+            {!loading && !error && <p>🟢</p>}
         </div>
     );
 }

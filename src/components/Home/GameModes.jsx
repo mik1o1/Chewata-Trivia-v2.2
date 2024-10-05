@@ -5,25 +5,25 @@ import { TbDeviceGamepad2 } from 'react-icons/tb'
 const gameModes = [
 	{
 		icon: <TbDeviceGamepad2 className='text-3xl' />,
-		title: 'Classic',
-		description: 'Complete questions without fail to win! You have wildcards that can help you'
+		title: 'አራዳው',
+		description: 'ሁሉንም ጥያቄዎች ሳይሳሳቱ መልሶ ማሸነፍ! ነፍስ-አድን አማራጮቹን መጠቀም ይቻላል።'
 	},
 	{
 		icon: <BiTimeFive className='text-3xl' />,
-		title: 'Time',
-		description: 'Complete questions within the time limit to win! You can use wildcards'
+		title: 'ፈጣኑ',
+		description: 'ሁሉንም ጥያቄዎች በተሰጠው ጊዜ መልሶ ማሸነፍ! ነፍስ-አድን አማራጮቹን አሁንም መጠቀም ይቻላል።'
 	},
 	{
 		icon: <ImInfinite className='text-3xl' />,
-		title: 'Infinite',
-		description: 'Break your record by completing as many questions as you can! You can use wildcards'
+		title: 'ጨዋታ አዋቂው',
+		description: 'ብዙ መልሶ ማሸነፍ! እዚህ ላይም ነፍስ-አድን አማራጮቹን መጠቀም ይቻላል።'
 	}
 ]
 
 export default function GameModes () {
 	return (
-		<section className='lg:max-w-6xl mx-auto lg:col-start-1 lg:col-end-2 px-8 py-6 flex flex-col justify-center bg-[url("/bg-gamemodes.svg")] text-slate-900 w-full'>
-			<h2 className='text-2xl mb-4 font-medium '>Game modes </h2>
+		<section className='w-full mx-auto px-8 py-6 flex flex-col justify-center bg-[url("/bg-gamemodes.svg")] text-slate-900 '>
+			<h2 className='text-2xl mb-4 font-medium '> የጨዋታ እርከኖች </h2>
 			<nav>
 				<ul className='flex flex-col sm:flex-row justify-center gap-5'>
 					{gameModes.map((mode, index) => (

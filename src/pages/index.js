@@ -13,22 +13,16 @@ export default function Main () {
 	return (
 		<>
 			<Head>
-				<title>Chewata Trivia</title>
+				<title>አራዳ | Arada</title>
 			</Head>
-			<DataLoader /> {/* This will refresh data on load */}
 			<MainHome />
 			<GameModes />
 			<Categories />
-			<style jsx global>
+			<DataLoader /> {/* This will refresh data on load */}
+			<style>
 				{`
-				#__next {
-					display: grid;
-	        grid-template-columns: 1fr;
-				}
-        @media (min-width: 1024px) {
-          #__next {
-            grid-template-columns: 1.4fr 1fr;
-          }
+				display: grid;
+			
 			  `}
 			</style>
 		</>
