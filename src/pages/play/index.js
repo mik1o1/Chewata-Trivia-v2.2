@@ -32,6 +32,7 @@ export default function Play () {
 		<>
 			<Head><title>Chewata Trivia | Play</title></Head>
 			{loading && <PageLoading />}
+			{error[0] && <PageError />}
 			{!loading && !error[0] && <>
 				<PlayHeader />
 				<GameInfo />
