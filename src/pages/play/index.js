@@ -14,7 +14,7 @@ import categories from '@/assets/categories.json'
 import { useBoundStore } from '@/store/useBoundStore'
 
 export default function Play () {
-	const { loading, getQuestions, setQueries } = useBoundStore(state => state)
+	const { loading, error, getQuestions, setQueries } = useBoundStore(state => state)
 	const router = useRouter()
 
 	useEffect(() => {
@@ -32,7 +32,6 @@ export default function Play () {
 		<>
 			<Head><title>Chewata Trivia | Play</title></Head>
 			{loading && <PageLoading />}
-			{error[0] && <PageError />}
 			{!loading && !error[0] && <>
 				<PlayHeader />
 				<GameInfo />
