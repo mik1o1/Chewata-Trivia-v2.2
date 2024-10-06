@@ -1,3 +1,6 @@
+/* eslint-disable */ 
+
+
 {
 	"env": {
 		"browser": true,
@@ -19,26 +22,12 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
-	
-	"react": {
-		  "version": "detect"
-		},
-		
 	"rules": {
 		"indent": [1, "tab"],
 		"no-tabs": 0,
 		"react/react-in-jsx-scope": "off",
 		"react/prop-types": "off",
 		"no-unused-vars": 1,
-		"semi":"off",
-		"eol-last":"off",
-		"no-multiple-empty-lines":"off",
-		"multiline-ternary":"off",
-		"no-trailing-spaces":"off",
-		"comma-dangle":"off",
-		"no-mixed-spaces-and-tabs":"off",
-		"space-before-function-paren":"off",
-		"quotes":"off",
 		"react/no-unknown-property": [
 			2,
 			{
