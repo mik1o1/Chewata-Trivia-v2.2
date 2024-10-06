@@ -29,7 +29,17 @@ export default async function getQuestions (topics, qNumber) {
 		return questions
 	}
 
-	
+	if (process.env.NODE_ENV === 'development') {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				// const error = new Error('Custom error')
+				// error.statusCode = 350
+				// reject(error)
+
+				resolve(randomArray(getOfflineQuestions()))
+			}, 1 * 1000)
+		})
+	}
 
 	const iaQuestions = fetch('/api/questions', {
 		method: 'POST',
