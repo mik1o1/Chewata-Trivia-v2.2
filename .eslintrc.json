@@ -1,3 +1,5 @@
+/* eslint eqeqeq: "off", curly: "error" */
+
 {
 	"env": {
 		"browser": true,
@@ -19,6 +21,9 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
+<<<<<<< HEAD
+	
+=======
 	"rules": {
 		"indent": [1, "tab"],
 		"no-tabs": 0,
@@ -32,4 +37,5 @@
 			}
 		]
 	}
+>>>>>>> parent of a0a61a0 (rule changes for deploymnet)
 }
