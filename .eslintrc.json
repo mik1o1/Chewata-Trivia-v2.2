@@ -1,5 +1,4 @@
-/* eslint-disable */ 
-
+/* eslint eqeqeq: "off", curly: "error" */
 
 {
 	"env": {
