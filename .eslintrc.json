@@ -19,6 +19,11 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
+	
+	"react": {
+		  "version": "detect"
+		},
+		
 	"rules": {
 		"indent": [1, "tab"],
 		"no-tabs": 0,
