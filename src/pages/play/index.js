@@ -14,7 +14,7 @@ import categories from '@/assets/categories.json'
 import { useBoundStore } from '@/store/useBoundStore'
 
 export default function Play () {
-	const { loading, error, getQuestions, setQueries } = useBoundStore(state => state)
+	const { loading, getQuestions, setQueries } = useBoundStore(state => state)
 	const router = useRouter()
 
 	useEffect(() => {
