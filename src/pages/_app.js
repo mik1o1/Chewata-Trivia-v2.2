@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import { Rubik } from '@next/font/google'
+import { Rubik } from "next/font/google"
 import Head from 'next/head'
 import NewGameForm from '@/components/Form/NewGameForm'
 const rubik = Rubik({ subsets: ['latin'] })
