@@ -81,7 +81,7 @@ export default function NewGameForm () {
 					<JsxForm handleInputs={handleInputs} nowQueries={nowQueries} />
 				</div>
 
-				<button type='submit' className='btn-primary uppercase py-3 px-6 w-full tracking-widest' onClick={(e) => handleSubmit(e)}>New game</button>
+				<button type='submit' className='btn-primary uppercase py-3 px-6 w-full tracking-widest' onClick={(e) => handleSubmit(e)}>ጀምር</button>
 			</form>
 		</dialog >
 	)

@@ -58,69 +58,7 @@
         "xdvhjn",
         "hjnmk,l"
       ],
-      "correctAnswer": "dcfvgbhjnmk"
-    }
-  ],
-  "gvgvgvgvbbbb": [
-    {
-      "question": "awfwefwe",
-      "answers": [
-        "sdgewfgw",
-        "wefgqwerf",
-        "sdfgwerfg",
-        "segerg"
-      ],
-      "correctAnswer": "wefgqwerf"
-    },
-    {
-      "question": "bhnjnjn",
-      "answers": [
-        "sdfvsd",
-        "ergerge",
-        "serger",
-        "wegewr"
-      ],
-      "correctAnswer": "ergerge"
-    },
-    {
-      "question": "xdcfgvbhnjm",
-      "answers": [
-        "fgvbhjnm",
-        "dcfvbn",
-        " nm",
-        "cfgvbhn"
-      ],
-      "correctAnswer": " nm"
-    },
-    {
-      "question": "xdcfgvbhn",
-      "answers": [
-        "cvgbhjn",
-        "cfvgbjn",
-        "dcfvgbhnj",
-        "dcfvgbhn"
-      ],
-      "correctAnswer": "cfvgbjn"
-    },
-    {
-      "question": "xdcfgvbhn",
-      "answers": [
-        "c vbn",
-        "cfvgbh",
-        "cfvgbh",
-        "cfgvbh"
-      ],
-      "correctAnswer": "cfvgbh"
-    },
-    {
-      "question": "cfvgbhnj",
-      "answers": [
-        "cfgvbhjnmk",
-        "cfgvbhnj",
-        "cfgvbhnj",
-        "cfvgbnhj"
-      ],
-      "correctAnswer": "cfgvbhnj"
+      "correctAnswer": "xdvhjn"
     }
   ]
 }

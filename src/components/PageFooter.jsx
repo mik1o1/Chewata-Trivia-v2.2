@@ -44,14 +44,14 @@ export default function Footer ({ alert = false }) {
 						<p className={`absolute bottom-full -right-14 sm:bottom-auto sm:top-[2px] whitespace-pre sm:whitespace-nowrap text-sm md:text-base bg-white text-slate-900 rounded-md py-1 px-4 text-left transition-all ${showInfo ? 'opacity-100 -right-14  sm:!right-7 ' : 'opacity-0 right-0 pointer-events-none'}`}>
 							{
 								alert
-									? 'The questions made by AI may have errors. \nOnly some questions are made by IA'
-									: <span><a href="https://github.com/cosmoart/quiz-game" target="_blank" rel="noopener noreferrer" className={`bg-slate-200 px-1 rounded ${showInfo ? '' : 'hidden'}`}><BsFillStarFill className='inline-block mb-1' color='#e3b341' /> Star</a> - Made with ❤️ by <a href="https://github.com/cosmoart" target="_blank" rel="noreferrer" className={`underline ${showInfo ? '' : 'hidden'}`}>Cosmo</a></span>
+									? 'Question compiled by Chewata Awaqis. \nHuman errors might exist!'
+									: <span> Powered by <a href="https://efuyegela.com" target="_blank" rel="noreferrer" className={`underline ${showInfo ? '' : 'hidden'}`}>Efuye Gela - V1.0</a></span>
 							}
 						</p>
 					</li>
 
 					<li>
-						<button title={sound ? 'Mute' : 'Play music'} className='align-middle hover:scale-105 p-1.5 bg-white rounded-md'>
+						<button title={sound ? 'Mute' : 'Sound On'} className='align-middle hover:scale-105 p-1.5 bg-white rounded-md'>
 							{
 								sound
 									? <Image src={soundOn} alt="" width={25} height={25} onClick={() => setSound(false)} />

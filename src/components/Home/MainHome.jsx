@@ -26,7 +26,7 @@ export default function MainHome () {
 						</span>
 					))}
 				</h1>
-				<div className='bg-[#1c233a] absolute w-full lg:w-[41.7vw] h-40 top-16 left-0'></div>
+				<div className='bg-[#1c233a] absolute w-full h-40 top-16 left-0'></div>
 				<p className=' mb-20 relative'>
 				አዋቂ እራሱን ይፈትናል!
 				</p>
