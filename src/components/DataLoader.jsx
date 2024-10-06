@@ -32,7 +32,7 @@ export default function DataLoader() {
     }, []); // Only run on component mount
 
     return (
-        <div class="text-right">
+        <div className="text-right">
             {loading && <p >Loading</p>}
             {error && <p>🟡</p>}
             {!loading && !error && <p>🟢</p>}
