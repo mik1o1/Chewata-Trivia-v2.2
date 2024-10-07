@@ -24,7 +24,7 @@ export default function JsxForm({ handleInputs, nowQueries }) {
       amount: 1,
     },
     {
-      name: "እድል ስጠኝ",
+      name: "እድል",
       icon: <FaHeart color="white" className="text-2xl" />,
       amount: 1,
     },
@@ -32,22 +32,21 @@ export default function JsxForm({ handleInputs, nowQueries }) {
 
   return (
     <>
-      <div className="flex min-w-50 gap-2 sm:gap-5 flex-col">
+      <div className="p-1 relative ">
         <fieldset className="p-1">
-          <legend className="text-lg font-semibold mb-2">እድሎች</legend>
+          <legend className="text-lg font-semibold mb-2">ነፍስ አድን</legend>
           <ul className="flex gap-3 justify-between font-medium">
             {WILCARDS.map(({ name, icon, amount }) => (
               <li
                 key={name}
                 className={"flex gap-2 justify-center items-center"}
               >
-              
                   <div
-                    className="p-[10px] aspect-square h-20 w-20 rounded text-white bg-blue-500 transition-transform text"
+                    className="p-[10px] aspect-square h-15 w-15 rounded text-white bg-blue-500 transition-transform text"
                     title={name}
                   >
                     {icon}
-					<legend className='text-xs font-semibold'>{name}</legend>
+					<legend className='text-xs sm- font-semibold'>{name}</legend>
 
                   </div>
                 
