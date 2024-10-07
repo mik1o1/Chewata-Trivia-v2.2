@@ -73,9 +73,9 @@ export default function GameOver() {
 		if (queries.infinitymode) {
 			return `${score} ጥያቄዎችን በትክክል አግኝተዋል!`;
 		} else if (win === true) {
-			return `Congratulations! \nጥያቄዎቹን በሚገባ መልሰዋል። \n ጥያቄዎችን በትክክል አግኝተዋል። \nYour score: ${score}`;
+			return `ጎበዝ! \nጥያቄዎቹን በሚገባ መልሰዋል። \n ጥያቄዎችን በትክክል አግኝተዋል። \nያገኙት ነጥብ: ${score}`;
 		} else {
-			return ` ለዛሬ አልተሳካም! \nለሌላ እድል ይቅናዎት. \nYour score: ${score}`;
+			return ` ለዛሬ አልተሳካም! \nለሌላ እድል ይቅናዎት. \nያገኙት ነጥብ: ${score}`;
 		}
 	}
 
@@ -99,10 +99,10 @@ export default function GameOver() {
 					<div className='flex gap-6 items-center'>
 						<Link href="/" className='px-5 md:px-10 hover:opacity-75 bg-slate-200 py-3 rounded-md transition-colors'>
 							<BiArrowBack color='#0f172a' className='text-xl mr-1 inline-block' title='' />
-							Go back
+							ወደ ማውጫው ይመለሱ
 						</Link>
 						<button onClick={() => document.getElementById('newGameDialog').showModal()} className='btn-primary px-5 md:px-10 py-3 uppercase tracking-widest rounded-md bg-blue-500 text-white'>
-							{queries.infinitymode || win !== false ? 'Play Again' : 'Try Again'}
+							{queries.infinitymode || win !== false ? 'ድጋሚ ይጫወቱ' : 'ድጋሚ ይሞክሩ'}
 						</button>
 					</div>
 				</div>
