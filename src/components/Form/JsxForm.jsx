@@ -32,7 +32,7 @@ export default function JsxForm({ handleInputs, nowQueries }) {
 
   return (
     <>
-      <div className="flex gap-2 sm:gap-5 flex-col">
+      <div className="flex min-w-50 gap-2 sm:gap-5 flex-col">
         <fieldset className="p-1">
           <legend className="text-lg font-semibold mb-2">እድሎች</legend>
           <ul className="flex gap-3 justify-between font-medium">
@@ -41,16 +41,16 @@ export default function JsxForm({ handleInputs, nowQueries }) {
                 key={name}
                 className={"flex gap-2 justify-center items-center"}
               >
-                <li className="flex-col">
+              
                   <div
-                    className="p-[10px] aspect-square h-20 rounded text-white bg-blue-500 transition-transform text"
+                    className="p-[10px] aspect-square h-20 w-20 rounded text-white bg-blue-500 transition-transform text"
                     title={name}
                   >
                     {icon}
 					<legend className='text-xs font-semibold'>{name}</legend>
 
                   </div>
-                </li>
+                
                 <span className="text-xl">x{amount}</span>
               </li>
             ))}

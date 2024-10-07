@@ -1,64 +1,258 @@
 {
-  "እንቆቅልሽ": [
+  "እንቆቅልሽ (ቀላል)": [
     {
-      "question": "asdfasdfa",
+      "question": "ትንሽ ቅሎች ገደል ላይ ተንጠልጥለው",
       "answers": [
-        "adfasf",
-        "xcadcsc",
-        "dvsdvs",
-        "sdfsdfs"
+        "ፓፓያ",
+        "ጡት",
+        "ቅል",
+        "ጭንቅላት"
       ],
-      "correctAnswer": "xcadcsc"
+      "correctAnswer": "ጡት"
     },
     {
-      "question": "dwferv",
+      "question": "ቀይ በሬ አዟሪ ነጭ በሬ በርባሪ",
       "answers": [
-        "sfvvds",
-        "dfbvdfb",
-        "dfrtgrg",
-        "dfgerve"
+        "ገበሬ",
+        "ምላስና ጥርስ",
+        "ማረሻና ሞፈር",
+        "አርሰናል"
       ],
-      "correctAnswer": "dfrtgrg"
+      "correctAnswer": "ምላስና ጥርስ"
     },
     {
-      "question": "uhbhbgbgb",
+      "question": "ትንሽ መጅ አገር ፈጅ",
       "answers": [
-        "bhbhbhb",
-        "hbhbhbhgb",
-        "hbhbhbhb",
-        "bgvvvf"
+        "እግር",
+        "እሳት",
+        "ወፍጮ",
+        "ውሃ"
       ],
-      "correctAnswer": "hbhbhbhb"
+      "correctAnswer": "እግር"
     },
     {
-      "question": " bg g vf f",
+      "question": "የላይኛው ቤት ሳይዘጋ ያድራል",
       "answers": [
-        "nfvddfv",
-        "sdfgverv",
-        "dfgh",
-        "fghj"
+        "አፍንጫ",
+        "ዋሻ",
+        "ጆሮ",
+        "ኮርማ"
       ],
-      "correctAnswer": "dfgh"
+      "correctAnswer": "አፍንጫ"
     },
     {
-      "question": "xdcfgvbhnjmk",
+      "question": "የራሷን ቀዳዳ ሳትሰፋ የሌላውን ቀዳዳ የምትሰፋ",
       "answers": [
-        "crvghjn",
-        "xsdcfgvn",
-        "cfgvbh",
-        "cfgvbh"
+        "ልብስ ሰፊ",
+        "ሃሜተኛ",
+        "መርፌ",
+        "ቀዳዳ"
       ],
-      "correctAnswer": "xsdcfgvn"
+      "correctAnswer": "መርፌ"
     },
     {
-      "question": "xdcfvgbhjn",
+      "question": "በልቶ የበላውን የሚረሳ",
       "answers": [
-        "xdcfgvbhnj",
-        "dcfvgbhjnmk",
-        "xdvhjn",
-        "hjnmk,l"
+        "ህጻን",
+        "ሆድ",
+        "ስልቻ",
+        "ማሰሮ"
       ],
-      "correctAnswer": "xdvhjn"
+      "correctAnswer": "ሆድ"
+    },
+    {
+      "question": "አፍንጫ እያላት የማትናፈጥ",
+      "answers": [
+        "ህጻን",
+        "ሽንብራ",
+        "ባቄላ",
+        "ቆሎ"
+      ],
+      "correctAnswer": "ሽንብራ"
+    },
+    {
+      "question": "የአህያ መቃብር",
+      "answers": [
+        "መቃብር",
+        "ቁጥቋጦ ጫካ",
+        "ትኩስ አፈር",
+        "የጅብ ሆድ"
+      ],
+      "correctAnswer": "የጅብ ሆድ"
+    },
+    {
+      "question": "ክንፍ የለኝም እበራለሁ፤ አይን የለኝም አለቅሳለሁ",
+      "answers": [
+        "ደመና",
+        "ንፋስ",
+        "ንስር",
+        "ድንኳን"
+      ],
+      "correctAnswer": "ደመና"
+    },
+    {
+      "question": "አንድ አይን ያላት ግን የማታይ",
+      "answers": [
+        "መርፌ",
+        "የሌሊት ወፍ",
+        "እውር",
+        "ትል"
+      ],
+      "correctAnswer": "መርፌ"
+    },
+    {
+      "question": "እሷ እየረጠበች የምታደርቅ",
+      "answers": [
+        "ፎጣ",
+        "ንፋስ",
+        "ስፖንጅ",
+        "ባልዲ"
+      ],
+      "correctAnswer": "ፎጣ"
+    },
+    {
+      "question": "ፀሃይ የምትፈራ ውሃ የምትደፍር",
+      "answers": [
+        "ጨው",
+        "ቂቤ",
+        "ሊጥ",
+        "በረዶ"
+      ],
+      "correctAnswer": "ቂቤ"
+    },
+    {
+      "question": "ምንም ቢወዷት አይታቀፏት",
+      "answers": [
+        "እሳት",
+        "ውሻ",
+        "ንፋስ",
+        "ልጅ"
+      ],
+      "correctAnswer": "እሳት"
+    }
+  ],
+  "እንቆቅልሽ (ጠጣር)": [
+    {
+      "question": "እዚያ ያለ ቂጣ አንድ ወገኑ ገማሳ",
+      "answers": [
+        "ሽልጦ",
+        "ሙልሙል",
+        "ጨረቃ",
+        "ዳቤ"
+      ],
+      "correctAnswer": "ጨረቃ"
+    },
+    {
+      "question": "ትንሹ የማያድግ ትልቁ የማያረጅ",
+      "answers": [
+        "ድንጋይ",
+        "ጉንዳን",
+        "ኤሊ",
+        "አባት"
+      ],
+      "correctAnswer": "ድንጋይ"
+    },
+    {
+      "question": "የአባቴ አለንጋ ወንዝ ለወንዝ ያላጋ",
+      "answers": [
+        "ምላስ",
+        "ጅራፍ",
+        "ሃረግ",
+        "ቀበቶ"
+      ],
+      "correctAnswer": "ምላስ"
+    },
+    {
+      "question": "ሲከተል ውሎ ቤት ሲደርሱ የሚከዳ",
+      "answers": [
+        "ውሻ",
+        "ረሃብ",
+        "ጥላ",
+        "ላብ"
+      ],
+      "correctAnswer": "ጥላ"
+    },
+    {
+      "question": "ሲሄድ የሚኖር፤ የማይደክመው",
+      "answers": [
+        "ዘመን",
+        "ጫማ",
+        "ሯጭ",
+        "ወንዝ"
+      ],
+      "correctAnswer": "ዘመን"
+    },
+    {
+      "question": "ፍየሎች አበዱ ተንበርክከው እሳት አነደዱ",
+      "answers": [
+        "ቀጥቃጭ",
+        "ወናፍ",
+        "ስልቻ",
+        "ሞረድ"
+      ],
+      "correctAnswer": "ወናፍ"
+    },
+    {
+      "question": "ሲሄድ በፈረስ ሲመለስ በፈረስ",
+      "answers": [
+        "ማሰሮ",
+        "እንስራ",
+        "አባወራ",
+        "ሰንጋ"
+      ],
+      "correctAnswer": "እንስራ"
+    },
+    {
+      "question": "ካባቷ ትበልጣለች ከናቷ ታንሳለች",
+      "answers": [
+        "ግመል",
+        "በቅሎ",
+        "ሰጎን",
+        "ጉንዳን"
+      ],
+      "correctAnswer": "በቅሎ"
+    },
+    {
+      "question": "ወገበ ቆማጣ ሃገሩን ሁሉ ቆምጣ ቆምጣ",
+      "answers": [
+        "ዶማ",
+        "መቀስ",
+        "ማጭድ",
+        "መጋዝ"
+      ],
+      "correctAnswer": "ማጭድ"
+    },
+    {
+      "question": "በአፏ በልታ በጎኗ የምትተፋ",
+      "answers": [
+        "ሆድ",
+        "ማንቆርቆሪያ",
+        "ግመል",
+        "በርሜል"
+      ],
+      "correctAnswer": "ማንቆርቆሪያ"
+    },
+    {
+      "question": "ጠዋት በአራት እግር ፤ ቀን በሁለት እግር ፤ ማታ በሶስት እግር",
+      "answers": [
+        "ባጃጅ",
+        "ሰጎን",
+        "ወፍ",
+        "ልጅነት ፤ ወጣትነት ፤ ሽምግልና"
+      ],
+      "correctAnswer": "ልጅነት ፤ ወጣትነት ፤ ሽምግልና"
+    }
+  ],
+  "እንቆቅልሽ (የልጅ)": [
+    {
+      "question": "ቀይ ሙሽራ በነጭ አጥር ታጥራ",
+      "answers": [
+        "ምላስ",
+        "ሆስፒታል",
+        "ቡና",
+        "ቤት"
+      ],
+      "correctAnswer": "ምላስ"
     }
   ]
 }

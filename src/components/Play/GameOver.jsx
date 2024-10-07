@@ -1,15 +1,13 @@
-import Image from 'next/image'
-import Link from 'next/link'
-
-import { AiFillCloseCircle, AiFillCheckCircle } from 'react-icons/ai'
-import { useCallback, useEffect, useRef } from 'react'
-import { IoCloseSharp } from 'react-icons/io5'
-import { BiArrowBack } from 'react-icons/bi'
-import trophyIcon from '@/assets/trophy.svg'
-
-import playSound from '@/helpers/playSound'
-import ReactCanvasConfetti from 'react-canvas-confetti'
-import { useBoundStore } from '@/store/useBoundStore'
+import Image from 'next/image';
+import Link from 'next/link';
+import { AiFillCloseCircle, AiFillCheckCircle } from 'react-icons/ai';
+import { useCallback, useEffect, useRef } from 'react';
+import { IoCloseSharp } from 'react-icons/io5';
+import { BiArrowBack } from 'react-icons/bi';
+import trophyIcon from '@/assets/trophy.svg';
+import playSound from '@/helpers/playSound';
+import ReactCanvasConfetti from 'react-canvas-confetti';
+import { useBoundStore } from '@/store/useBoundStore';
 
 const canvasStyles = {
 	position: 'fixed',
@@ -19,15 +17,15 @@ const canvasStyles = {
 	top: 0,
 	left: 0,
 	zIndex: 100
-}
+};
 
-export default function GameOver () {
-	const { queries, score, win } = useBoundStore(state => state)
-	const refAnimationInstance = useRef(null)
+export default function GameOver() {
+	const { queries, score, win } = useBoundStore(state => state);
+	const refAnimationInstance = useRef(null);
 
 	const getInstance = useCallback((instance) => {
-		refAnimationInstance.current = instance
-	}, [])
+		refAnimationInstance.current = instance;
+	}, []);
 
 	const makeShot = useCallback((particleRatio, opts) => {
 		refAnimationInstance.current &&
@@ -35,67 +33,50 @@ export default function GameOver () {
 				...opts,
 				origin: { y: 0.7 },
 				particleCount: Math.floor(200 * particleRatio)
-			})
-	}, [])
+			});
+	}, []);
 
 	const fire = useCallback(() => {
-		makeShot(0.25, {
-			spread: 26,
-			startVelocity: 55
-		})
-
-		makeShot(0.2, {
-			spread: 60
-		})
-
-		makeShot(0.35, {
-			spread: 100,
-			decay: 0.91,
-			scalar: 0.8
-		})
-
-		makeShot(0.1, {
-			spread: 120,
-			startVelocity: 25,
-			decay: 0.92,
-			scalar: 1.2
-		})
-
-		makeShot(0.1, {
-			spread: 120,
-			startVelocity: 45
-		})
-	}, [makeShot])
+		makeShot(0.25, { spread: 26, startVelocity: 55 });
+		makeShot(0.2, { spread: 60 });
+		makeShot(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+		makeShot(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+		makeShot(0.1, { spread: 120, startVelocity: 45 });
+	}, [makeShot]);
 
 	useEffect(() => {
 		if (win === true) {
-			fire()
-			playSound('win', 0.2)
+			fire();
+			playSound('win', 0.2);
 		}
-	}, [win])
+	}, [win]);
 
-	function closeDialog () {
-		playSound('pop', 0.2)
-		document.getElementById('gameoverdialog').close()
-		document.getElementById('gameoverbg').style.display = 'none'
+	function closeDialog() {
+		playSound('pop', 0.2);
+		document.getElementById('gameoverdialog').close();
+		document.getElementById('gameoverbg').style.display = 'none';
 	}
 
-	function finalImage () {
-		if (queries.infinitymode) return <Image src={trophyIcon} width={100} height={200} alt='Trophy' />
-		if (win === true) return <AiFillCheckCircle className='text-8xl text-green-500' />
-		return <AiFillCloseCircle className='text-8xl text-red-500' />
+	function finalImage() {
+		if (queries.infinitymode) return <Image src={trophyIcon} width={100} height={200} alt='Trophy' />;
+		if (win === true) return <AiFillCheckCircle className='text-8xl text-green-500' />;
+		return <AiFillCloseCircle className='text-8xl text-red-500' />;
 	}
 
-	function finalTitle () {
-		if (queries.infinitymode) return 'Congratulations!'
-		if (win === true) return 'You Win!'
-		return 'You Lose!'
+	function finalTitle() {
+		if (queries.infinitymode) return 'ጎበዝ👍!';
+		if (win === true) return 'አሸንፈዋል!';
+		return 'ተሸንፈዋል!';
 	}
 
-	function finalText () {
-		if (queries.infinitymode) return `You answered well ${score} questions!`
-		if (win === true) return 'Congratulations! \nQuiz completed successfully.'
-		return 'Better luck next time! \nYou can try again.'
+	function finalText() {
+		if (queries.infinitymode) {
+			return `${score} ጥያቄዎችን በትክክል አግኝተዋል!`;
+		} else if (win === true) {
+			return `Congratulations! \nጥያቄዎቹን በሚገባ መልሰዋል። \n ጥያቄዎችን በትክክል አግኝተዋል። \nYour score: ${score}`;
+		} else {
+			return ` ለዛሬ አልተሳካም! \nለሌላ እድል ይቅናዎት. \nYour score: ${score}`;
+		}
 	}
 
 	return (
@@ -127,5 +108,5 @@ export default function GameOver () {
 				</div>
 			</dialog>
 		</>
-	)
+	);
 }

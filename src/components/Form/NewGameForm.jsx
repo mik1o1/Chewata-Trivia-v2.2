@@ -57,11 +57,14 @@ export default function NewGameForm () {
 		if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) {
 			closeDialog()
 		}
+
+		
 	}
 
 	function closeDialog () {
 		playSound('pop-down')
 		dialog.current.classList.add('hide')
+
 		function handleAnimationEnd () {
 			dialog.current.classList.remove('hide')
 			dialog.current.close()
