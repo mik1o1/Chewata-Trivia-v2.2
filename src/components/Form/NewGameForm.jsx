@@ -46,7 +46,7 @@ export default function NewGameForm () {
 		setQueries(queryValidator(nowQueries))
 		router.push({ pathname: '/play', query })
 
-		const cate = nowQueries.categories.map(cat => categoriesJSON.find(c => c.id === cat).name)
+		const cate = nowQueries.categories.map(cat => categoriesJSON.find(c => c.id === cat)?.name)
 		if (router.pathname === '/play') getQuestions(cate, nowQueries.infinitymode ? 5 : nowQueries.questions)
 
 		closeDialog()
@@ -58,7 +58,7 @@ export default function NewGameForm () {
 			closeDialog()
 		}
 
-		
+
 	}
 
 	function closeDialog () {
