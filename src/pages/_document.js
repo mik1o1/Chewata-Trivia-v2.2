@@ -16,7 +16,7 @@ export default function Document () {
 				{/* <!-- Open Graph --> */}
 				<meta property="og:title" content="Chewata Trivia" />
 				<meta property="og:type" content="website" />
-				<meta property="og:image" content="https://repository-images.githubusercontent.com/593410779/0555ac47-4bd6-49a9-8869-5b1ec84a58f6" />
+				<meta property="og:image" content="" />
 				<meta property="og:url" content="https://Chewata Trivia.vercel.app" />
 				<meta property="og:description" content="Chewata Trivia is a quiz/trivia game with questions made by IA. You can select different game modes and topics, you can also use different wildcards to help you answer the questions." />
 
@@ -26,7 +26,7 @@ export default function Document () {
 				<meta name="twitter:creator" content="@Cosmoart" />
 				<meta name="twitter:title" content="Chewata Trivia" />
 				<meta name="twitter:description" content="Chewata Trivia is a quiz/trivia game with questions made by IA. You can select different game modes and topics, you can also use different wildcards to help you answer the questions." />
-				<meta name="twitter:image" content="https://repository-images.githubusercontent.com/593410779/0555ac47-4bd6-49a9-8869-5b1ec84a58f6" />
+				<meta name="twitter:image" content="" />
 			</Head>
 			<body>
 				<Main />
