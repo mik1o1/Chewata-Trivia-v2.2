@@ -64,14 +64,14 @@ export default function GameOver() {
 	}
 
 	function finalTitle() {
-		if (queries.infinitymode) return 'ጎበዝ👍!';
+		if (queries.infinitymode) return 'ጎበዝ!';
 		if (win === true) return 'አሸንፈዋል!';
 		return 'ተሸንፈዋል!';
 	}
 
 	function finalText() {
 		if (queries.infinitymode) {
-			return `${score} ጥያቄዎችን በትክክል አግኝተዋል!`;
+			return `ጥያቄዎቹን በሚገባ መልሰዋል!  \nያገኙት ነጥብ: ${score}`;
 		} else if (win === true) {
 			return `ጎበዝ! \nጥያቄዎቹን በሚገባ መልሰዋል። \n ጥያቄዎችን በትክክል አግኝተዋል። \nያገኙት ነጥብ: ${score}`;
 		} else {
@@ -96,14 +96,15 @@ export default function GameOver() {
 					<p className='text-center mb-3 whitespace-pre-line'>
 						{finalText()}
 					</p>
-					<div className='flex gap-6 items-center'>
-						<Link href="/" className='px-5 md:px-10 hover:opacity-75 bg-slate-200 py-3 rounded-md transition-colors'>
-							<BiArrowBack color='#0f172a' className='text-xl mr-1 inline-block' title='' />
-							ወደ ማውጫው ይመለሱ
-						</Link>
-						<button onClick={() => document.getElementById('newGameDialog').showModal()} className='btn-primary px-5 md:px-10 py-3 uppercase tracking-widest rounded-md bg-blue-500 text-white'>
+					<div className='flex gap-6 items-center flex-col'>
+					<button onClick={() => document.getElementById('newGameDialog').showModal()} className='btn-primary px-5 md:px-10 py-3 uppercase tracking-widest rounded-md bg-blue-500 text-white'>
 							{queries.infinitymode || win !== false ? 'ድጋሚ ይጫወቱ' : 'ድጋሚ ይሞክሩ'}
 						</button>
+						<Link href="/" className='px-5 md:px-10 hover:opacity-75 bg-slate-200 py-3 rounded-md transition-colors'>
+							<BiArrowBack color='#0f172a' className='text-xl mr-1 inline-block' title='' />
+							ይውጡ
+						</Link>
+						
 					</div>
 				</div>
 			</dialog>

@@ -19,16 +19,12 @@ export default function MainHome () {
 	return (
 		<main className='mainHome relative  mx-auto h-screen flex gap-4 flex-col justify-between items-center px-5 py-20 text-center text-white w-full'>
 			<article>
-				<h1 className='text-8xl font-medium w-full uppercase z-10 relative' translate='no'>
-					{'አራዳ'.split('').map((letter, index) => (
-						<span key={index} id={letter + index + 10} className='relative inline-block transition-all duration-300' onMouseEnter={handleTitleHover} onMouseLeave={handleTitleLeave}>
-							{letter}
-						</span>
-					))}
+				<h1 className='text-8xl font-medium w-full uppercase z-50 relative relative inline-block transition-all duration-300' translate='no'>
+					አራዳ
 				</h1>
 				<div className='bg-[#1c233a] absolute w-full h-40 top-16 left-0'></div>
 				<p className=' mb-20 relative'>
-				አዋቂ እራሱን ይፈትናል!
+				Powerd By ጨዋታ አዋቂ
 				</p>
 			</article>
 			<button onClick={handlePlay} id='play' href="play" className='btn-primary uppercase px-6 py-4 text-lg max-w-md w-full mx-auto mt-10' >

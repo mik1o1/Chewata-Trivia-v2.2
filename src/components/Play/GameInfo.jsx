@@ -8,7 +8,7 @@ export default function GameInfo () {
 	const { queries } = useBoundStore(state => state)
 	const [showInfo, setShowInfo] = useState(false)
 
-	const mode = queries.timemode && queries.infinitymode ? 'Time | Infinity' : !queries.timemode && !queries.infinitymode ? 'Classic' : queries.timemode ? 'Time' : 'Infinity'
+	const mode = queries.timemode && queries.infinitymode ? 'Time | Infinity' : !queries.timemode && !queries.infinitymode ? 'Classic' : queries.timemode ? 'Time' : 'ብዙ በመለሰ'
 
 	return (
 		<>

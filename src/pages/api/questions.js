@@ -1,6 +1,4 @@
 import offlineQuestions from '@/assets/questions.json'
-const cohere = require('cohere-ai')
-cohere.init(process.env.COHERE_API_KEY)
 
 function defaultPromt () {
 	const topics = Object.keys(offlineQuestions)

@@ -16,8 +16,8 @@ export default function Main () {
 				<title>አራዳ | Arada</title>
 			</Head>
 			<MainHome />
-			<GameModes />
-			<Categories />
+			{/* <GameModes /> */}
+			{/* <Categories /> */}
 			<DataLoader /> {/* This will refresh data on load */}
 			<style>
 				{`
