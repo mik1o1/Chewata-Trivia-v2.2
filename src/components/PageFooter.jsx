@@ -45,7 +45,7 @@ export default function Footer ({ alert = false }) {
 							{
 								alert
 									? 'Question compiled by Chewata Awaqis. \nHuman errors might exist!'
-									: <span> Powered by <a href="https://efuyegela.com" target="_blank" rel="noreferrer" className={`underline ${showInfo ? '' : 'hidden'}`}>Efuye Gela - V1.0</a></span>
+									: <span> Powered by <a href="https://efuyegela.com" target="_blank" rel="noreferrer" className={`underline ${showInfo ? '' : 'hidden'}`}>Efuye Gela</a> - V1.0</span>
 							}
 						</p>
 					</li>

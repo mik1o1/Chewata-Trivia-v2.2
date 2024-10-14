@@ -197,7 +197,9 @@ const QuestionsPage = () => {
         setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
     };
 
+
     return (
+        
         <div className="p-6 bg">
             <h1 className="text-3xl font-bold mb-4">Question Manager</h1>
 
