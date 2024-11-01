@@ -6,7 +6,6 @@ import { useEffect } from 'react'
 import DataLoader from '@/components/DataLoader'; // Adjust the import path as necessary
 
 
-
 export default function Main () {
 	useEffect(() => { window.onbeforeunload = () => null }, [])
 
@@ -16,15 +15,9 @@ export default function Main () {
 				<title>አራዳ | Arada</title>
 			</Head>
 			<MainHome />
+			
 			{/* <GameModes /> */}
 			{/* <Categories /> */}
-			<DataLoader /> {/* This will refresh data on load */}
-			<style>
-				{`
-				display: grid;
-			
-			  `}
-			</style>
 		</>
 	)
 }

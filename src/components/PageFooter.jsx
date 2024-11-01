@@ -7,6 +7,9 @@ import { MdInfo } from 'react-icons/md'
 import { GoAlert } from 'react-icons/go'
 import { BsFillStarFill } from 'react-icons/bs'
 
+
+
+
 export default function Footer ({ alert = false }) {
 	const [sound, setSound] = useState(false)
 	const [showInfo, setShowInfo] = useState(false)
@@ -34,6 +37,8 @@ export default function Footer ({ alert = false }) {
 			<nav>
 				<ul className='flex gap-4'>
 					<li className='relative'>
+
+						
 						<button title='Show info' className={`align-middle relative z-20 hover:scale-105 p-1.5 bg-white rounded-md ${showInfo ? 'scale-110' : ''}`} onClick={() => handleClick(true)}>
 							{
 								alert
