@@ -7,9 +7,6 @@ import { MdInfo } from 'react-icons/md'
 import { GoAlert } from 'react-icons/go'
 import { BsFillStarFill } from 'react-icons/bs'
 
-import ScoreManager from '@/components/scoremanager'
-
-
 export default function Footer ({ alert = false }) {
 	const [sound, setSound] = useState(false)
 	const [showInfo, setShowInfo] = useState(false)
@@ -34,7 +31,6 @@ export default function Footer ({ alert = false }) {
 
 	return (
 		<footer className='fixed right-4 bottom-3 z-20'>
-			<ScoreManager />
 			<nav>
 				<ul className='flex gap-4'>
 					<li className='relative'>

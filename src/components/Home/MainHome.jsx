@@ -85,28 +85,27 @@ export default function MainHome() {
 	return (
 		<main className='mainHome relative mx-auto h-screen flex gap-4 flex-col justify-between items-center px-5 py-20 text-center text-white w-full'>
 			<canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0"></canvas>
-				<article className='relative z-10'>
-					<h1
-						style={{ color: '#e8ca4fff' }}
-						className='text-8xl font-medium w-full uppercase inline-block transition-all duration-300'
-						translate='no'
-					>
-						አራዳ
-					</h1>
-					<div className='absolute w-full h-40 top-16 left-0'></div>
-					<p className='mb-20 relative' style={{ color: '#e8ca4fff' }}>
-						Powered By ጨዋታ አዋቂ
-					</p>
-				</article>
-				<button
-					onClick={handlePlay}
-					id='play'
-					className='btn-primary uppercase px-6 py-4 text-lg max-w-md w-full mx-auto mt-10'
+			<article className='relative z-10'>
+				<h1
+					style={{ color: '#e8ca4fff' }}
+					className='text-8xl font-medium w-full uppercase inline-block transition-all duration-300'
+					translate='no'
 				>
-					እንጫወት
-				</button>
+					አራዳ
+				</h1>
+				<div className='absolute w-full h-40 top-16 left-0'></div>
+				<p className='mb-20 relative' style={{ color: '#e8ca4fff' }}>
+					Powered By ጨዋታ አዋቂ
+				</p>
+			</article>
+			<button
+				onClick={handlePlay}
+				id='play'
+				className='btn-primary uppercase px-6 py-4 text-lg max-w-md w-full mx-auto mt-10'
+			>
+				እንጫወት
+			</button>
 			<PageFooter />
-			
 		</main>
 	);
 }

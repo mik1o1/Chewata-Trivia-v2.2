@@ -18,7 +18,7 @@ export default function Main () {
 			<MainHome />
 			{/* <GameModes /> */}
 			{/* <Categories /> */}
-			<iframe src="https://www.w3schools.com"></iframe>			<DataLoader /> {/* This will refresh data on load */}
+			<DataLoader /> {/* This will refresh data on load */}
 			<style>
 				{`
 				display: grid;
