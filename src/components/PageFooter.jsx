@@ -7,6 +7,7 @@ import { MdInfo } from 'react-icons/md'
 import { GoAlert } from 'react-icons/go'
 import { BsFillStarFill } from 'react-icons/bs'
 import ScoreManager from '@/components/Form/ScoreManager'
+import Credit from '@/components/Form/credit'
 
 export default function Footer ({ alert = false }) {
 	const [sound, setSound] = useState(false)
@@ -30,11 +31,6 @@ export default function Footer ({ alert = false }) {
 		playSound('switch-on')
 	}
 
-	function handlescore() {
-		playSound('pop');
-		document.getElementById('scorekeeper')?.showModal();
-	}
-
 	return (
 		<footer className='fixed right-4 bottom-3 z-20'>
 			<nav>
@@ -44,22 +40,10 @@ export default function Footer ({ alert = false }) {
 					</li>
 
 					<li className='relative'>
-						<button title='Show info' className={`align-middle relative z-20 hover:scale-105 p-1.5 bg-white rounded-md ${showInfo ? 'scale-110' : ''}`} onClick={() => handleClick(true)}>
-							{
-								alert
-									? <GoAlert className='text-[25px] mx-auto' color='#0f172a' />
-									: <MdInfo className='text-[25px]' style={{ color: '#1c233a' }} />
-							}
-						</button>
 
-						<p className={`absolute bottom-full -right-14 sm:bottom-auto sm:top-[2px] whitespace-pre sm:whitespace-nowrap text-sm md:text-base bg-white text-slate-900 rounded-md py-1 px-4 text-left transition-all ${showInfo ? 'opacity-100 -right-14  sm:!right-7 ' : 'opacity-0 right-0 pointer-events-none'}`}>
-							{
-								alert
-									? 'Question compiled by Chewata Awaqis. \nHuman errors might exist!'
-									: <span> Powered by <a href="https://efuyegela.com" target="_blank" rel="noreferrer" className={`underline ${showInfo ? '' : 'hidden'}`}>Efuye Gela</a> - V1.0</span>
-							}
-						</p>
-
+						<div>
+							<Credit />
+						</div>
 					</li>
 
 					<li>

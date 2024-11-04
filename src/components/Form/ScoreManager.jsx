@@ -94,7 +94,7 @@ export default function JeopardyScoreKeeper() {
                       onClick={() => removePlayer(player.id)}
                       className="px-3 py-1 bg-gray-400 text-white rounded-full hover:bg-gray-500 focus:outline-none"
                     >
-                      ✖
+                      X
                     </button>
                   </div>
                 </div>
