@@ -73,6 +73,7 @@ export default function MainHome() {
 		playSound('pop');
 		document.getElementById('newGameDialog')?.showModal();
 	}
+	
 
 	return (
 		<main className='mainHome relative mx-auto h-screen flex gap-4 flex-col justify-center items-center px-5 py-20 text-center text-white w-full'>

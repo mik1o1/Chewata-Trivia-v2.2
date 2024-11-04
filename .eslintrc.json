@@ -21,21 +21,5 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
-<<<<<<< HEAD
 	
-=======
-	"rules": {
-		"indent": [1, "tab"],
-		"no-tabs": 0,
-		"react/react-in-jsx-scope": "off",
-		"react/prop-types": "off",
-		"no-unused-vars": 1,
-		"react/no-unknown-property": [
-			2,
-			{
-				"ignore": ["jsx", "global", "space"]
-			}
-		]
-	}
->>>>>>> parent of a0a61a0 (rule changes for deploymnet)
 }
