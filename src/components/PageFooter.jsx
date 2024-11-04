@@ -39,7 +39,6 @@ export default function Footer ({ alert = false }) {
 		<footer className='fixed right-4 bottom-3 z-20'>
 			<nav>
 				<ul className='flex gap-4'>
-					
 					<li>
 					 <ScoreManager />
 					</li>
