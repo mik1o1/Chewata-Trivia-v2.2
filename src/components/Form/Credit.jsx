@@ -21,12 +21,12 @@ export default function DescriptionAndCredits() {
   return (
     <div>
       <button
-        className="align-middle hover:scale-105 p-1.5 bg-white text-black rounded-md"
+        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none relative z-20 hover:scale-105 p-1.5"
         onClick={() => setIsOpen(true)}
       >
-        i
+        ስለ ጨዋታው
       </button>
-
+      
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg w-[90vw] max-w-[600px] max-h-[90vh] overflow-y-auto relative shadow-lg">
