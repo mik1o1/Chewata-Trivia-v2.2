@@ -81,7 +81,7 @@ export default function MainHome() {
 			<article className='relative z-1'>
 				<h1
 					style={{ color: '#ffffff' }}
-					className='text-[150px]  md:text-[200px] font-bold w-full uppercase inline-block md '
+					className='text-[100px]  mx:text-[200px] font-bold w-full uppercase inline-block md '
 					translate='no'
 				>
 					አዋቂ
@@ -93,7 +93,7 @@ export default function MainHome() {
 			<button
 				onClick={handlePlay}
 				id='play'
-				className='btn-primary uppercase px-6 py-4 text-[25px] md:text-[25px] max-w-md w-full mx-auto mt-10'
+				className='btn-primary uppercase px-6 py-4 text-[20px]  mx:text-[100px]  max-w-md w-full mx-auto mt-10'
 			>
 				እንጫወት
 			</button>

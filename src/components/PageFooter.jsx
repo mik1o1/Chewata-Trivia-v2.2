@@ -44,7 +44,7 @@ export default function Footer ({ alert = false }) {
 					 <ScoreManager />
 					</li>
 
-					<li className='relative'>
+					<li>
 						<Credit />
 					</li>
 

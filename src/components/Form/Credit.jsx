@@ -53,18 +53,18 @@ export default function DescriptionAndCredits() {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="fixed top-1/2 w-10/12 h-fit left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-slate-900 m-0 backdrop-blur-lg rounded-md py-9 px-8 md:px-11">
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl"
-              aria-label="Close"
-            >
-              X
-            </button>
-            <h2 className="text-s md:text-xl font-semibold text-center text-blue-600 mb-2">
-              ስለ ጨዋታው
-            </h2>
+        <div className="fixed inset-0 bg-black bg-opacity-50 w-screen h-screen flex items-center justify-center z-50 p-4">
+        <div className="fixed top-1/2 w-11/12 md:max-w-[90vh] max-h-[90vh] overflow-y-auto h-fit left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-slate-900 m-0 backdrop-blur-lg rounded-md py-9 px-8 md:px-11">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl"
+            aria-label="Close"
+          >
+            X
+          </button>
+          <h2 className="text-s md:text-xl font-semibold text-center text-blue-600 mb-2">
+            ስለ ጨዋታው
+          </h2>
             <div className="text-gray-700 text-sm mb-4 space-y-6">
               <p className="mb-6">
                 <span className="ml-1 text-xs md:text-s ">
@@ -74,7 +74,7 @@ export default function DescriptionAndCredits() {
               </p>
 
               <p className="mb-6">
-                <span className="text-blue-600 font-semibold text-s md:text-xl block">
+                <span className="text-blue-600 font-semibold text-s md:text-xl block mb-2">
                   የጨዋታ መንገድ
                 </span>
                 <nav>
@@ -82,7 +82,7 @@ export default function DescriptionAndCredits() {
                     {gameModes.map((mode, index) => (
                       <li
                         key={index + mode.title}
-                        className="bg-neutral-300 max-w-s  bg-opacity-30 backdrop-blur-[2px] rounded p-5 hover:scale-[1.03] transition-all hover:backdrop-blur-0 hover:bg-opacity-100 hover:bg-white shadow-sm mx-auto"
+                        className="bg-neutral-300 max-w-10/12 m:max-w-9 bg-opacity-30 backdrop-blur-[2px] rounded p-5 hover:scale-[1.03] transition-all hover:backdrop-blur-0 hover:bg-opacity-100 hover:bg-white shadow-sm"
                       >
                         <h3 className="text-s font-medium my-1">
                           {mode.title}
@@ -133,11 +133,7 @@ export default function DescriptionAndCredits() {
               </p>
 
               <p className="mb-6">
-                <span className="text-blue-600 font-semibold text-xl block"></span>
-                <span className="ml-1">
-                  ይህ ጨዋታ MIT Opensource መሰረት አድርጎ በእፉዬገላ ቴክኖሎጂስ ታግዞ በዳሎል ስቱዲዮ
-                  ተሰራ።
-                </span>
+                <span className="text-blue-600 font-semibold text-xs block">©EfuyeGella Publishers</span>
               </p>
             </div>
           </div>
