@@ -31,9 +31,9 @@ export default function MainHome() {
 
 			// Main drawing function
 			const matrixRain = () => {
-				ctx.fillStyle = '#F2B33DAA'; // Clear canvas with a translucent black
+				ctx.fillStyle = '#2563ebaa'; // Clear canvas with a translucent black
 				ctx.fillRect(0, 0, canvas.width, canvas.height);
-				ctx.fillStyle = '#F28B30ff'; // Green color for the text
+				ctx.fillStyle = '#3b82f6'; // Green color for the text
 
 				drops.forEach((drop, index) => {
 					const text = words[Math.floor(Math.random() * words.length)];

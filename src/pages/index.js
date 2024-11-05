@@ -5,14 +5,13 @@ import Categories from '@/components/Home/Categories'
 import { useEffect } from 'react'
 import DataLoader from '@/components/DataLoader'; // Adjust the import path as necessary
 
-
 export default function Main () {
 	useEffect(() => { window.onbeforeunload = () => null }, [])
 
 	return (
 		<>
 			<Head>
-				<title>አራዳ | Arada</title>
+				<title>አዋቂ | Awaqi</title>
 			</Head>
 			<MainHome />
 			
