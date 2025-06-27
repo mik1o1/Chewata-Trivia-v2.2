@@ -7,7 +7,7 @@ import { MdInfo } from 'react-icons/md'
 import { GoAlert } from 'react-icons/go'
 import { BsFillStarFill } from 'react-icons/bs'
 import ScoreManager from '@/components/Form/ScoreManager'
-import Credit from '@/components/form/Credit'
+import Credit from '@/components/Form/credit'
 
 export default function Footer ({ alert = false }) {
 	const [sound, setSound] = useState(false)
@@ -31,11 +31,6 @@ export default function Footer ({ alert = false }) {
 		playSound('switch-on')
 	}
 
-	function handlescore() {
-		playSound('pop');
-		document.getElementById('scorekeeper')?.showModal();
-	}
-
 	return (
 		<footer className='fixed right-4 bottom-3 z-20'>
 			<nav>
@@ -45,7 +40,10 @@ export default function Footer ({ alert = false }) {
 					</li>
 
 					<li className='relative'>
-						<Credit />
+
+						<div>
+							<Credit />
+						</div>
 					</li>
 
 					<li>
