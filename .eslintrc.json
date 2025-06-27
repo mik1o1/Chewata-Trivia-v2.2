@@ -21,10 +21,5 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
-
 	
-  	"rules": {
-    	"no-console": "warn",
-    	"no-unused-vars": "warn"
-    }
 }
