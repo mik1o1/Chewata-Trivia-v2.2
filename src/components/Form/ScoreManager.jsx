@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const LOCAL_STORAGE_KEY = 'ScoreKeeper';
+const LOCAL_STORAGE_KEY = ' ScoreKeeper';
 
 export default function JeopardyScoreKeeper() {
   const [players, setPlayers] = useState(() => {
@@ -18,7 +18,7 @@ export default function JeopardyScoreKeeper() {
       { id: 2, name: 'ተጫዋች 2', score: 0 },
     ];
   });
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(players));
@@ -49,40 +49,16 @@ export default function JeopardyScoreKeeper() {
     ]);
   };
 
-  function clickOutsideDialog (e) {
-		const rect = dialog.current.getBoundingClientRect()
-		if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) {
-			closeDialog()
-		}
-
-
-	}
-
-	function closeDialog () {
-		playSound('pop-down')
-		dialog.current.classList.add('hide')
-
-		function handleAnimationEnd () {
-			dialog.current.classList.remove('hide')
-			dialog.current.close()
-			dialog.current.removeEventListener('animationend', handleAnimationEnd)
-		}
-		dialog.current.addEventListener('animationend', handleAnimationEnd)
-	}
-
   return (
     <div>
-      <button 
-        className="px-4 py-2 bg-white text-black rounded-lg focus:outline-none relative z-20 transition-transform transform hover:scale-105 shadow-lg" 
-        onClick={() => setIsOpen(true)}
-      >
-        ውጤት መያዣ
-      </button>
+      <button className={`px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none relative z-20 hover:scale-105 p-1.5 rounded-md`} onClick={() => setIsOpen(true)}>
+      ውጤት መያዣ
+				</button>
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg w-[90vw] max-w-[600px] max-h-[90vh] overflow-y-auto relative shadow-lg">
             <button
-              onClick={() => setIsOpen(false) }
+              onClick={() => setIsOpen(false)}
               className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
             >
               ✖
@@ -91,6 +67,7 @@ export default function JeopardyScoreKeeper() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {players.map(player => (
                 <div key={player.id} className="bg-blue-500 p-4 rounded-lg shadow-md flex-col">
+                  
                   <div className="text-6xl font-extrabold text-white mb-2 text-center">
                     {player.score}
                   </div>
